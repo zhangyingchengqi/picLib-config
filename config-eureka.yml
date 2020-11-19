@@ -46,3 +46,8 @@ spring:
       password: a
   application:
     name: microcloud-config-eureka
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: 39.99.175.175
