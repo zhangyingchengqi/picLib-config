@@ -24,6 +24,11 @@ spring:
       password: a
   application:
     name: microservice-config-eureka
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: 39.99.175.175
 ---
 server:
  port: 7002
