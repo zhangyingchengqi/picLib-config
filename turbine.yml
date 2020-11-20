@@ -1,5 +1,5 @@
 turbine:
-  appConfig: piclibapi,piclibweb,piclibwap
+  appConfig: piclibapi,piclibweb,piclibwap,userapi,userweb,userwap
   aggregator:
     clusterConfig: default
   clusterNameExpression: new String("default")
