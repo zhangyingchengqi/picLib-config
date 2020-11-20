@@ -1,3 +1,14 @@
+spring:
+   profiles:
+      active:
+        - beta
+---
+
+spring:
+  profiles: beta
+  application:
+      name: turbine
+
 turbine:
   appConfig: piclibapi,piclibweb,piclibwap,userapi,userweb,userwap
   aggregator:
