@@ -15,7 +15,8 @@ spring:
           brokers: 39.99.175.175
 
 turbine:
-  appConfig: piclibapi,piclibweb,piclibwap,userapi,userweb,userwap
+  app-config: piclibapi,piclibweb,piclibwap,userapi,userweb,userwap  #  配置Eureka中的serviceId列表，表明监控哪些服务, 启动后从配置中心中进行更新
   aggregator:
-    clusterConfig: default
-  clusterNameExpression: new String("default")
+    cluster-config: default     #  指定聚合哪些集群，多个使用","分割，默认为default。
+  cluster-name-expression: new String("default")   #表示集群的名字为default
+  combine-host-port: true   
