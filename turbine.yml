@@ -8,6 +8,11 @@ spring:
   profiles: beta
   application:
       name: turbine
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: 39.99.175.175
 
 turbine:
   appConfig: piclibapi,piclibweb,piclibwap,userapi,userweb,userwap
