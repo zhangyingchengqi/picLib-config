@@ -1,0 +1,5 @@
+turbine:
+  appConfig: piclibapi,piclibweb,piclibwap
+  aggregator:
+    clusterConfig: default
+  clusterNameExpression: new String("default")
