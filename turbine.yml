@@ -8,11 +8,7 @@ spring:
   profiles: beta
   application:
       name: turbine
-  cloud:
-    stream:
-      kafka:
-        binder:
-          brokers: 39.99.175.175
+
 
 turbine:
   app-config: piclibapi,piclibweb,piclibwap,userapi,userweb,userwap  #  配置Eureka中的serviceId列表，表明监控哪些服务, 启动后从配置中心中进行更新
