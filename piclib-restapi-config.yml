@@ -1,5 +1,10 @@
+spring:
+   profiles:
+      active:
+        - beta
+---
 server:
-  port: 8888
+  port: 9999
 
 mybatis:
   configuration:
@@ -17,13 +22,15 @@ pagehelper:
   supportMethodsArguments: true # 支持通过 Mapper 接口参数来传递分页参数，默认值false，分页插件会从查询方法的参数值中，自动根据上面 params 配置的字段中取值，查找到合适的值时就会自动分页。 使用方法可以参考测试代码中的 com.github.pagehelper.test.basic 包下的 ArgumentsMapTest 和 ArgumentsObjTest。
 
 
-# 数据源
+
 spring:
+  profiles: beta
   cloud:
     stream:
       kafka:
         binder:
           brokers: 39.99.175.175
+  # 数据源
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
