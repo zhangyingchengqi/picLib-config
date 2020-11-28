@@ -24,6 +24,10 @@ pagehelper:
 
 
 spring:
+  security:
+    user:
+      name: admin
+      password: a
   profiles: beta
   cloud:
     stream:
