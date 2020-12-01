@@ -11,7 +11,7 @@ spring:
 
 
 turbine:
-  app-config: piclibapi,piclibweb,piclibwap,userapi,userweb,userwap  #  配置Eureka中的serviceId列表，表明监控哪些服务, 启动后从配置中心中进行更新
+  app-config: MICROSERVICE-PROVIDER-PICLIB,piclibweb,piclibwap,userapi,userweb,userwap  #  配置Eureka中的serviceId列表，表明监控哪些服务, 启动后从配置中心中进行更新
   aggregator:
     cluster-config: default     #  指定聚合哪些集群，多个使用","分割，默认为default。
   cluster-name-expression: new String("default")   #表示集群的名字为default
