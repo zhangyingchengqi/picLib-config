@@ -27,7 +27,7 @@ spring:
   security:
     user:
       name: admin
-      password: a
+      password: zy
   profiles: beta
   cloud:
     stream:
